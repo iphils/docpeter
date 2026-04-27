@@ -23,7 +23,6 @@ form?.addEventListener('submit', (e) => {
     `Time: ${encodeURIComponent(time)}%0A` +
     (reason ? `Reason: ${encodeURIComponent(reason)}` : '');
 
-  // Replace with the clinic's WhatsApp number when available.
-  const clinicWhatsApp = '919447000000';
+  const clinicWhatsApp = '917902399859';
   window.open(`https://wa.me/${clinicWhatsApp}?text=${text}`, '_blank');
 });

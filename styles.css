@@ -82,6 +82,18 @@ p{margin:0 0 1em;color:var(--ink-2)}
 .btn-outline:hover{background:var(--accent);color:#fff;text-decoration:none}
 .btn-ghost{color:var(--ink);border-color:var(--line);background:#fff}
 .btn-ghost:hover{border-color:var(--ink);text-decoration:none}
+.btn-whatsapp{background:#25D366;color:#fff}
+.btn-whatsapp:hover{background:#1ebe57;text-decoration:none;color:#fff}
+
+/* Floating WhatsApp action */
+.wa-fab{
+  position:fixed;right:20px;bottom:20px;z-index:50;
+  width:56px;height:56px;border-radius:50%;
+  background:#25D366;display:grid;place-items:center;
+  box-shadow:0 6px 18px rgba(37,211,102,.45),0 2px 6px rgba(0,0,0,.15);
+  transition:transform .2s ease, box-shadow .2s ease;
+}
+.wa-fab:hover{transform:scale(1.06);text-decoration:none;box-shadow:0 8px 22px rgba(37,211,102,.55)}
 
 /* Hero */
 .hero{
