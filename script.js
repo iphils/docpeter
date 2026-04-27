@@ -1,5 +1,20 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
+const navToggle = document.getElementById('nav-toggle');
+const primaryNav = document.getElementById('primary-nav');
+navToggle?.addEventListener('click', () => {
+  const open = primaryNav.classList.toggle('open');
+  navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  navToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+});
+primaryNav?.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    primaryNav.classList.remove('open');
+    navToggle?.setAttribute('aria-expanded', 'false');
+    navToggle?.setAttribute('aria-label', 'Open menu');
+  });
+});
+
 const form = document.getElementById('book-form');
 form?.addEventListener('submit', (e) => {
   e.preventDefault();
