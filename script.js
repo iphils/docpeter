@@ -38,6 +38,6 @@ form?.addEventListener('submit', (e) => {
     `Time: ${encodeURIComponent(time)}%0A` +
     (reason ? `Reason: ${encodeURIComponent(reason)}` : '');
 
-  const clinicWhatsApp = '917902399859';
+  const clinicWhatsApp = '918281447235';
   window.open(`https://wa.me/${clinicWhatsApp}?text=${text}`, '_blank');
 });
